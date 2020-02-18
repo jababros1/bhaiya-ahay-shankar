@@ -40,19 +40,19 @@ else {
 }
 });
 
-//
-// app.post("/",function(req,res){
-//   let name = req.body.name;
-// const query = new data({
-// name:req.body.name,
-// email:req.body.email,
-// subject:req.body.subject,
-// message:req.body.message
-// });
-// query.save();
-//
-// res.redirect("/")
-// });
+
+app.post("/",function(req,res){
+  let name = req.body.name;
+const query = new data({
+name:req.body.name,
+email:req.body.email,
+subject:req.body.subject,
+message:req.body.message
+});
+query.save();
+
+res.redirect("/")
+});
 app.post("/contact",function(req,res){
   let name = req.body.name;
   const query = new data({
